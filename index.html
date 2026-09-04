@@ -1,0 +1,466 @@
+<title>الرياض – موسكو</title>
+<meta name="description" content="خطة رحلة من الرياض إلى موسكو، ٢٣–٣٠ سبتمبر، مع يوم ريف وركوب خيل خارج المدينة والتكلفة الإجمالية بالريال السعودي">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@500;700&family=Cairo:wght@400;600;700;800&display=swap">
+<style>
+  :root{
+    --bg:#EEEEEA;
+    --surface:#FFFFFF;
+    --surface-2:#F4F3EF;
+    --ink:#201519;
+    --ink-soft:#6B5B5F;
+    --red:#7A2331;
+    --red-deep:#4A1520;
+    --gold:#B8933A;
+    --gold-soft:#E3C878;
+    --line:#DDD8D2;
+    --rose:#8C3B34;
+    --shadow: 0 1px 2px rgba(32,21,25,.08), 0 8px 24px -12px rgba(32,21,25,.25);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#120C0E;
+      --surface:#1E1418;
+      --surface-2:#251A1E;
+      --ink:#F0E6E8;
+      --ink-soft:#C2A8AE;
+      --red:#C1495B;
+      --red-deep:#7A2331;
+      --gold:#E0BE72;
+      --gold-soft:#8C6A28;
+      --line:#3A2830;
+      --rose:#C97364;
+      --shadow: 0 1px 2px rgba(0,0,0,.35), 0 12px 28px -14px rgba(0,0,0,.6);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#120C0E;
+    --surface:#1E1418;
+    --surface-2:#251A1E;
+    --ink:#F0E6E8;
+    --ink-soft:#C2A8AE;
+    --red:#C1495B;
+    --red-deep:#7A2331;
+    --gold:#E0BE72;
+    --gold-soft:#8C6A28;
+    --line:#3A2830;
+    --rose:#C97364;
+    --shadow: 0 1px 2px rgba(0,0,0,.35), 0 12px 28px -14px rgba(0,0,0,.6);
+  }
+
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"Cairo", -apple-system, "SF Pro Text", "Segoe UI", Tahoma, Arial, sans-serif;
+    direction:rtl;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .ltr-num{ direction:ltr; unicode-bidi:embed; font-variant-numeric:tabular-nums; }
+  .sar{ direction:ltr; unicode-bidi:embed; font-variant-numeric:tabular-nums; }
+  .sar-icon{
+    width:.72em; height:.72em; display:inline-block;
+    vertical-align:-0.03em; fill:currentColor; margin-inline-end:.18em;
+  }
+
+  .page{ max-width:960px; margin:0 auto; padding:2.5rem 1.25rem 4rem; }
+
+  /* ---------- Header ticket ---------- */
+  .ticket{
+    background:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56'%3E%3Cpath d='M28 4 C33 12 40 15 48 16 C40 19 34 25 32 33 C30 25 24 19 16 16 C24 15 31 12 28 4 Z' fill='rgba(255,255,255,0.05)'/%3E%3C/svg%3E"),
+      linear-gradient(135deg, var(--red-deep), var(--red));
+    color:#FBEFEF;
+    border-radius:18px;
+    box-shadow:var(--shadow);
+    overflow:hidden;
+    position:relative;
+    border-top:4px solid var(--gold);
+  }
+  .ticket-top{
+    padding:1.75rem 2rem 1.5rem;
+    display:flex; justify-content:space-between; align-items:flex-start;
+    gap:1rem; flex-wrap:wrap;
+  }
+  .ticket-eyebrow{
+    font-size:.72rem; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--gold-soft); font-weight:700; margin:0 0 .4rem;
+  }
+  .ticket-route{
+    font-family:"El Messiri", "Cairo", serif;
+    font-size:clamp(1.6rem, 4.2vw, 2.3rem);
+    font-weight:700; margin:0; text-wrap:balance;
+    display:flex; align-items:center; gap:.6rem;
+  }
+  .ticket-route .arrow{ color:var(--gold-soft); font-weight:400; }
+  .ticket-dates{ text-align:start; font-size:.95rem; color:#EBD6D6; }
+  .ticket-dates b{ display:block; font-size:1.1rem; color:#fff; font-variant-numeric:tabular-nums; }
+  .ticket-perf{ height:0; border-top:2px dashed rgba(255,255,255,.28); margin:0 2rem; position:relative; }
+  .ticket-perf::before, .ticket-perf::after{
+    content:""; position:absolute; top:-11px; width:22px; height:22px;
+    border-radius:50%; background:var(--bg);
+  }
+  .ticket-perf::before{ right:-33px; }
+  .ticket-perf::after{ left:-33px; }
+  .ticket-bottom{ padding:1.25rem 2rem 1.6rem; display:flex; gap:1.75rem; flex-wrap:wrap; font-size:.85rem; }
+  .ticket-stat b{ display:block; color:#fff; font-size:1rem; }
+  .ticket-stat span{ color:#E4C9C9; }
+
+  /* ---------- Section headings ---------- */
+  section{ margin-top:2.75rem; }
+  .section-head{ display:flex; align-items:baseline; gap:.6rem; margin-bottom:1rem; }
+  .section-num{
+    font-size:.8rem; font-weight:800; color:var(--gold);
+    border:1.5px solid var(--gold-soft); border-radius:999px;
+    width:1.9rem; height:1.9rem; display:flex; align-items:center; justify-content:center;
+    flex-shrink:0;
+  }
+  h2{
+    font-family:"El Messiri", "Cairo", serif;
+    font-size:1.5rem; margin:0; font-weight:700; text-wrap:balance;
+    color:var(--red-deep);
+  }
+  :root:not([data-theme="light"]) h2, :root[data-theme="dark"] h2{ color:var(--gold-soft); }
+  .section-sub{ color:var(--ink-soft); font-size:.92rem; margin:.15rem 0 0; }
+
+  /* ---------- Tables ---------- */
+  .table-wrap{ overflow-x:auto; border-radius:14px; box-shadow:var(--shadow); background:var(--surface); }
+  table{ border-collapse:collapse; width:100%; min-width:640px; font-size:.93rem; }
+  thead th{
+    background:var(--red-deep); color:#F7E9EA; text-align:start; font-weight:700;
+    font-size:.78rem; letter-spacing:.04em; padding:.85rem 1rem; white-space:nowrap;
+  }
+  tbody td{ padding:1rem; border-top:1px solid var(--line); vertical-align:top; }
+  tbody tr:nth-child(even){ background:var(--surface-2); }
+  .day-cell{ white-space:nowrap; }
+  .day-num{ font-weight:800; font-size:1rem; display:block; }
+  .day-date{ color:var(--ink-soft); font-size:.8rem; font-variant-numeric:tabular-nums; }
+  .note{ color:var(--ink-soft); font-size:.85rem; }
+
+  .cost-table td.price{ white-space:nowrap; font-weight:700; }
+  .cost-table .range{ font-variant-numeric:tabular-nums; color:var(--ink); }
+  .cost-table .usd{ display:block; color:var(--ink-soft); font-size:.76rem; font-weight:400; margin-top:.1rem; }
+  .cost-table tfoot td{ border-top:2px solid var(--gold-soft); font-weight:800; font-size:1rem; padding:1rem; }
+  .cost-table tfoot .range{ font-size:1.05rem; color:var(--red); }
+  :root:not([data-theme="light"]) .cost-table tfoot .range,
+  :root[data-theme="dark"] .cost-table tfoot .range{ color:var(--gold-soft); }
+
+  /* ---------- Day trip cards ---------- */
+  .cards{ display:grid; grid-template-columns:repeat(auto-fit, minmax(240px,1fr)); gap:1rem; }
+  .card{
+    background:var(--surface); border-radius:14px; box-shadow:var(--shadow);
+    padding:1.3rem 1.4rem; border-top:3px solid var(--line);
+    display:flex; flex-direction:column; gap:.55rem;
+  }
+  .card.pick{ border-top-color:var(--gold); }
+  .card-head{ display:flex; justify-content:space-between; align-items:center; gap:.5rem; }
+  .card-title{ font-size:1.05rem; font-weight:800; margin:0; }
+  .verdict{
+    font-size:.7rem; font-weight:800; letter-spacing:.03em;
+    padding:.25rem .6rem; border-radius:999px; white-space:nowrap;
+  }
+  .verdict.best{ background:var(--gold-soft); color:#3A2C0E; }
+  .verdict.ok{ background:var(--surface-2); color:var(--ink-soft); border:1px solid var(--line); }
+  :root:not([data-theme="light"]) .verdict.best, :root[data-theme="dark"] .verdict.best{ color:#241C08; }
+  .card-meta{ display:flex; gap:1.1rem; font-size:.82rem; color:var(--ink-soft); flex-wrap:wrap; }
+  .card-meta b{ color:var(--ink); font-variant-numeric:tabular-nums; }
+  .card p{ margin:0; font-size:.9rem; color:var(--ink-soft); }
+
+  .rest-cards{ display:grid; grid-template-columns:repeat(auto-fit, minmax(210px,1fr)); gap:.85rem; margin-top:.9rem; }
+  .rest-card{ background:var(--surface); border-radius:12px; padding:.95rem 1.1rem; box-shadow:var(--shadow); }
+  .rest-card-head{ display:flex; justify-content:space-between; align-items:baseline; gap:.5rem; margin-bottom:.3rem; }
+  .rest-card h4{ margin:0; font-size:.95rem; font-weight:800; }
+  .tier{ font-size:.68rem; font-weight:700; color:var(--gold); white-space:nowrap; }
+  :root:not([data-theme="light"]) .tier, :root[data-theme="dark"] .tier{ color:var(--gold-soft); }
+  .rest-card p{ margin:0; font-size:.85rem; color:var(--ink-soft); }
+
+  /* ---------- Practical notes ---------- */
+  .notes-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); gap:1rem; }
+  .note-card{ background:var(--surface); border-radius:12px; padding:1rem 1.2rem; box-shadow:var(--shadow); }
+  .note-card h3{ margin:0 0 .35rem; font-size:.85rem; color:var(--red); }
+  :root:not([data-theme="light"]) .note-card h3, :root[data-theme="dark"] .note-card h3{ color:var(--gold-soft); }
+  .note-card p{ margin:0; font-size:.88rem; color:var(--ink-soft); }
+  .note-card.warn{ border:1px solid var(--rose); }
+  .note-card.warn h3{ color:var(--rose); }
+
+  footer{ margin-top:3rem; padding-top:1.25rem; border-top:1px solid var(--line); font-size:.8rem; color:var(--ink-soft); }
+  footer a{ color:var(--ink-soft); }
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="sar-icon" viewBox="0 0 1256 1256">
+    <path d="M0,0M750,1119 C730,1163,716,1211,711,1262 C711,1262,1136,1172,1136,1172 C1156,1127,1169,1079,1174,1028 C1174,1028,750,1119,750,1119Z M1136,901 C1136,901,1136,901,1136,901 C1156,857,1169,809,1174,758 C1174,758,843,828,843,828 C843,828,843,693,843,693 C843,693,1136,631,1136,631 C1156,587,1169,538,1174,488 C1174,488,843,558,843,558 C843,558,843,72,843,72 C793,100,748,138,711,183 C711,183,711,586,711,586 C711,586,579,614,579,614 C579,614,579,6,579,6 C528,34,483,72,447,117 C447,117,447,642,447,642 C447,642,151,705,151,705 C131,750,117,798,112,849 C112,849,447,777,447,777 C447,777,447,948,447,948 C447,948,88,1024,88,1024 C68,1068,55,1117,50,1167 C50,1167,425,1088,425,1088 C456,1081,482,1063,499,1038 C499,1038,568,936,568,936 C568,936,568,936,568,936 C575,926,579,913,579,899 C579,899,579,749,579,749 C579,749,711,721,711,721 C711,721,711,992,711,992 C711,992,1136,901,1136,901Z "/>
+  </symbol>
+</svg>
+
+<div class="page">
+
+  <div class="ticket">
+    <div class="ticket-top">
+      <div>
+        <p class="ticket-eyebrow">خط رحلة</p>
+        <p class="ticket-route">الرياض <span class="arrow">✈</span> موسكو</p>
+      </div>
+      <div class="ticket-dates">
+        الذهاب <b class="ltr-num">23 سبتمبر</b>
+        · العودة <b class="ltr-num">30 سبتمبر</b>
+      </div>
+    </div>
+    <div class="ticket-perf"></div>
+    <div class="ticket-bottom">
+      <div class="ticket-stat"><b class="ltr-num">8 أيام</b><span>٧ ليالٍ، موسكو كقاعدة إقامة</span></div>
+      <div class="ticket-stat"><b>خريف مبكر</b><span>٩–١٩° مئوية تقريبًا، أبرد من الرياض بكثير</span></div>
+      <div class="ticket-stat"><b>فيزا إلكترونية</b><span>مطلوبة، دخول واحد حتى ٣٠ يومًا</span></div>
+      <div class="ticket-stat"><b class="sar"><svg class="sar-icon" aria-hidden="true"><use href="#sar-icon"></use></svg>~3,695–7,242</b><span>إجمالي تقديري للفرد، كل شيء شامل</span></div>
+    </div>
+  </div>
+
+  <section>
+    <div class="section-head">
+      <span class="section-num">١</span>
+      <div>
+        <h2>جدول الرحلة يومًا بيوم</h2>
+        <p class="section-sub">موسكو كقاعدة إقامة، مع يوم ريف وركوب خيل ويوم ضمن حلقة المدن الذهبية التاريخية</p>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>اليوم</th><th>المحاور الرئيسية</th><th>ملاحظات</th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="day-cell"><span class="day-num">١</span><span class="day-date ltr-num">الأربعاء 23/9</span></td>
+            <td>وصول إلى موسكو، الاستقرار في الفندق، جولة مسائية في الساحة الحمراء ومتجر GUM التاريخي مضاءً</td>
+            <td class="note">اصرف عملة كافية من المطار — البطاقات الغربية لا تعمل داخل روسيا</td>
+          </tr>
+          <tr>
+            <td class="day-cell"><span class="day-num">٢</span><span class="day-date ltr-num">الخميس 24/9</span></td>
+            <td>مجمع الكرملين (غرفة الأسلحة والكاتدرائيات الداخلية)، وكاتدرائية القديس باسيل بقبابها الملونة الشهيرة</td>
+            <td class="note">احجز تذكرة الكرملين مسبقًا؛ تُغلق أبوابها أيام الخميس أحيانًا — تحقق من الجدول</td>
+          </tr>
+          <tr>
+            <td class="day-cell"><span class="day-num">٣</span><span class="day-date ltr-num">الجمعة 25/9</span></td>
+            <td>معرض تريتياكوف للفن الروسي، شارع أربات، وجولة في محطات مترو موسكو المزخرفة كالقصور (كومسومولسكايا ومايكوفسكايا)</td>
+            <td class="note">المترو نفسه تجربة سياحية — تذكرة يوم واحدة تكفي للتجوّل بين المحطات</td>
+          </tr>
+          <tr>
+            <td class="day-cell"><span class="day-num">٤</span><span class="day-date ltr-num">السبت 26/9</span></td>
+            <td>يوم كامل خارج موسكو — ريف وركوب خيل في الطبيعة الروسية (تفاصيل في القسم التالي)</td>
+            <td class="note">اليوم المخصص لركوب الخيل — احجزه مبكرًا فالمقاعد محدودة في عطلة نهاية الأسبوع</td>
+          </tr>
+          <tr>
+            <td class="day-cell"><span class="day-num">٥</span><span class="day-date ltr-num">الأحد 27/9</span></td>
+            <td>يوم ضمن حلقة المدن الذهبية التاريخية — سيرغييف بوساد أو سوزدال/فلاديمير (تفاصيل في القسم التالي)</td>
+            <td class="note">اختر حسب رغبتك بيوم أخف أو أطول وأغنى بالمعالم</td>
+          </tr>
+          <tr>
+            <td class="day-cell"><span class="day-num">٦</span><span class="day-date ltr-num">الاثنين 28/9</span></td>
+            <td>حديقة غوركي، كاتدرائية المسيح المخلّص، ومنطقة مسرح البولشوي مساءً (عرض إن توفرت تذكرة)</td>
+            <td class="note">تذاكر البولشوي تتراوح كثيرًا بالسعر — احجز مبكرًا للمقاعد المعقولة</td>
+          </tr>
+          <tr>
+            <td class="day-cell"><span class="day-num">٧</span><span class="day-date ltr-num">الثلاثاء 29/9</span></td>
+            <td>يوم حر — معرض VDNKh ومتحف الفضاء (Cosmonautics)، أو تسوق أخير، أو جولة ركوب خيل ثانية لمن أحبّها</td>
+            <td class="note">يوم مرن لتعويض أي تأجيل بسبب الطقس في الأيام السابقة</td>
+          </tr>
+          <tr>
+            <td class="day-cell"><span class="day-num">٨</span><span class="day-date ltr-num">الأربعاء 30/9</span></td>
+            <td>صباح حر أو تسوق أخير، ثم التوجه إلى المطار والعودة إلى الرياض</td>
+            <td class="note">احسب وقتًا إضافيًا لإجراءات المغادرة — الزحام المروري في موسكو صعب التوقع</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <span class="section-num">٢</span>
+      <div>
+        <h2>يوم الريف وركوب الخيل</h2>
+        <p class="section-sub">أقرب نادٍ ريفي حقيقي خارج موسكو — لا حاجة لأكثر من يوم واحد</p>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card pick">
+        <div class="card-head">
+          <h3 class="card-title">إيكورانتشو (Ecorancho)</h3>
+          <span class="verdict best">الأنسب لركوب الخيل</span>
+        </div>
+        <div class="card-meta">
+          <span>المسافة: <b class="ltr-num">~60–70 كم</b> من موسكو</span>
+          <span>السعر: <b class="ltr-num">~5,000 روبل</b> للساعة للفرد</span>
+        </div>
+        <p>نادٍ ريفي في قرية أليكسيفكا بمنطقة موسكو، مخصص لركوب الخيل في الطبيعة مع خيول مدرَّبة جيدًا وخيول هادئة للأطفال. يمكن دمجه مع نزهة حقول وغابات وربما ساونا روسية تقليدية (بانيا) بعد الركوب.</p>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <h3 class="card-title">عربة خيل تقليدية</h3>
+          <span class="verdict ok">بديل أخف لغير الراكبين</span>
+        </div>
+        <div class="card-meta">
+          <span>ضمن نفس اليوم أو النادي</span>
+          <span>مناسب للعائلات وكبار السن</span>
+        </div>
+        <p>بعض المجمعات الفروسية قرب موسكو تقدّم جولة عربة يجرّها حصان بدل الركوب المباشر — خيار جيد لمن يريد الأجواء دون ركوب فعلي.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <span class="section-num">٣</span>
+      <div>
+        <h2>خيارات يوم حلقة المدن الذهبية</h2>
+        <p class="section-sub">مدن روسيا التاريخية القديمة، أبرشيات بيضاء وأديرة تعود لقرون</p>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card pick">
+        <div class="card-head">
+          <h3 class="card-title">سيرغييف بوساد</h3>
+          <span class="verdict best">الأنسب لنصف يوم</span>
+        </div>
+        <div class="card-meta">
+          <span>المسافة: <b class="ltr-num">~75 كم</b> من موسكو</span>
+          <span>الطريق: <b class="ltr-num">~1.5 ساعة</b></span>
+        </div>
+        <p>دير ترينيتي-سرغيوس (تراث عالمي)، أهم مركز روحي في روسيا الأرثوذكسية. أقرب مدينة ذهبية وأخفها ليوم لا يرهقك بعد يوم ركوب الخيل السابق.</p>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <h3 class="card-title">سوزدال وفلاديمير</h3>
+          <span class="verdict ok">يوم طويل لكن أغنى بالمعالم</span>
+        </div>
+        <div class="card-meta">
+          <span>المسافة: <b class="ltr-num">~200 كم</b> من موسكو</span>
+          <span>الطريق: <b class="ltr-num">~3.5–4 ساعات</b> كل اتجاه</span>
+        </div>
+        <p>كنائس بيضاء من القرون الوسطى وقلعة سوزدال الخشبية وأجواء قروية أصيلة. جولة يوم كامل منظّمة (~12 ساعة ذهابًا وإيابًا) — يستحق فقط لمن لا يمانع يومًا طويلًا في الحافلة.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <span class="section-num">٤</span>
+      <div>
+        <h2>التكلفة الإجمالية التقديرية للفرد</h2>
+        <p class="section-sub">بافتراض شخصين يتشاركان الغرفة — الحد الأدنى اقتصادي، والحد الأعلى مريح</p>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table class="cost-table">
+        <thead><tr><th>البند</th><th>التفاصيل</th><th>الحد الأدنى</th><th>الحد الأعلى</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>الطيران ذهاب وإياب</td>
+            <td>ناقل عبر محطة (الاتحاد/الخليجية) ← ناقل بسعر أعلى وتوقيت أفضل</td>
+            <td class="price"><span class="range sar"><svg class="sar-icon" aria-hidden="true"><use href="#sar-icon"></use></svg>1,861</span></td>
+            <td class="price"><span class="range sar"><svg class="sar-icon" aria-hidden="true"><use href="#sar-icon"></use></svg>2,428</span></td>
+          </tr>
+          <tr>
+            <td>الفيزا الإلكترونية</td>
+            <td>دخول واحد، رسم ثابت رسمي + تأمين سفر إلزامي</td>
+            <td class="price"><span class="range sar"><svg class="sar-icon" aria-hidden="true"><use href="#sar-icon"></use></svg>195</span></td>
+            <td class="price"><span class="range sar"><svg class="sar-icon" aria-hidden="true"><use href="#sar-icon"></use></svg>195</span></td>
+          </tr>
+          <tr>
+            <td>الفندق في موسكو</td>
+            <td>٧ ليالٍ، فندق ٣ نجوم اقتصادي ← فندق ٤ نجوم مريح وسط المدينة</td>
+            <td class="price"><span class="range sar"><svg class="sar-icon" aria-hidden="true"><use href="#sar-icon"></use></svg>459</span><span class="usd ltr-num">≈ $35/ليلة للغرفة</span></td>
+            <td class="price"><span class="range sar"><svg class="sar-icon" aria-hidden="true"><use href="#sar-icon"></use></svg>1,838</span><span class="usd ltr-num">≈ $140/ليلة للغرفة</span></td>
+          </tr>
+          <tr>
+            <td>يوم الريف وركوب الخيل</td>
+            <td>نقل + ساعة إلى ساعتين ركوب + غداء ريفي، للفرد</td>
+            <td class="price"><span class="range sar"><svg class="sar-icon" aria-hidden="true"><use href="#sar-icon"></use></svg>308</span></td>
+            <td class="price"><span class="range sar"><svg class="sar-icon" aria-hidden="true"><use href="#sar-icon"></use></svg>617</span></td>
+          </tr>
+          <tr>
+            <td>يوم المدن الذهبية</td>
+            <td>سيرغييف بوساد نصف يوم ← سوزدال وفلاديمير يوم كامل</td>
+            <td class="price"><span class="range sar"><svg class="sar-icon" aria-hidden="true"><use href="#sar-icon"></use></svg>169</span></td>
+            <td class="price"><span class="range sar"><svg class="sar-icon" aria-hidden="true"><use href="#sar-icon"></use></svg>413</span></td>
+          </tr>
+          <tr>
+            <td>الأكل والمطاعم</td>
+            <td>٨ أيام، مطاعم اقتصادية ← مطاعم روسية موصى بها</td>
+            <td class="price"><span class="range sar"><svg class="sar-icon" aria-hidden="true"><use href="#sar-icon"></use></svg>600</span></td>
+            <td class="price"><span class="range sar"><svg class="sar-icon" aria-hidden="true"><use href="#sar-icon"></use></svg>1,350</span></td>
+          </tr>
+          <tr>
+            <td>التذاكر والمعالم</td>
+            <td>الكرملين، القديس باسيل، تريتياكوف، مع/بدون تذكرة البولشوي</td>
+            <td class="price"><span class="range sar"><svg class="sar-icon" aria-hidden="true"><use href="#sar-icon"></use></svg>103</span></td>
+            <td class="price"><span class="range sar"><svg class="sar-icon" aria-hidden="true"><use href="#sar-icon"></use></svg>401</span></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">الإجمالي التقديري للفرد</td>
+            <td class="range sar"><svg class="sar-icon" aria-hidden="true"><use href="#sar-icon"></use></svg>~3,695</td>
+            <td class="range sar"><svg class="sar-icon" aria-hidden="true"><use href="#sar-icon"></use></svg>~7,242</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <p class="note" style="margin-top:.75rem;">مسافر منفرد بلا مشاركة يدفع تكلفة الغرفة كاملة تقريبًا (باقي البنود أسعارها للفرد أصلًا). الأسعار تقديرية من بحث حي بتاريخ ٣٠ أغسطس ٢٠٢٦ وتتغير حسب الحجز الفعلي، وحسب سعر صرف الروبل.</p>
+
+    <h3 style="margin:1.75rem 0 0; font-size:1rem;">مطاعم مقترحة</h3>
+    <div class="rest-cards">
+      <div class="rest-card">
+        <div class="rest-card-head"><h4>مومو (Mumu)</h4><span class="tier">اقتصادي</span></div>
+        <p>سلسلة مطاعم منتشرة — مطبخ روسي منزلي بأسعار معقولة وقائمة تتجاوز ٢٠٠ طبق</p>
+      </div>
+      <div class="rest-card">
+        <div class="rest-card-head"><h4>ماتريوشكا (Matryoshka)</h4><span class="tier">متوسط</span></div>
+        <p>بليني بالكافيار ومخللات منزلية وفطائر روسية تقليدية بأجواء أنيقة</p>
+      </div>
+      <div class="rest-card">
+        <div class="rest-card-head"><h4>غوسياتنيكوف</h4><span class="tier">متوسط~راقٍ</span></div>
+        <p>في قصر خاص سابق — شوربة السمك (أوخا) وبيروشكي وستروغانوف اللحم البارز</p>
+      </div>
+      <div class="rest-card">
+        <div class="rest-card-head"><h4>وايت رابيت (White Rabbit)</h4><span class="tier">راقٍ</span></div>
+        <p>ضمن أفضل ٥٠ مطعمًا عالميًا — كافيار ومحار بإطلالة بانورامية على موسكو</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <span class="section-num">٥</span>
+      <div>
+        <h2>ملاحظات عملية</h2>
+      </div>
+    </div>
+    <div class="notes-grid">
+      <div class="note-card">
+        <h3>الفيزا</h3>
+        <p>روسيا تتطلب فيزا إلكترونية لحاملي الجواز السعودي (دخول واحد حتى ٣٠ يومًا). قدّم الطلب قبل ٤–٨٦ يومًا من السفر، وتحتاج تأمين سفر ساري خلال الإقامة كشرط للحصول عليها.</p>
+      </div>
+      <div class="note-card warn">
+        <h3>البطاقات لا تعمل — خذ نقدًا</h3>
+        <p>بطاقات Visa وMastercard الصادرة خارج روسيا لا تعمل هناك بسبب العقوبات الدولية. اصطحب دولارات أو يورو نقدًا (أوراقًا نظيفة غير ممزّقة) وحوّلها لروبل بعد الوصول، أو استخرج بطاقة MIR روسية من مطار شيريميتيفو فور الوصول.</p>
+      </div>
+      <div class="note-card">
+        <h3>العملة</h3>
+        <p>الروبل الروسي (RUB). التحويل نقدًا أرخص عادة من الصرافات داخل الفنادق السياحية — قارن الأسعار قبل الصرف.</p>
+      </div>
+      <div class="note-card">
+        <h3>الطقس</h3>
+        <p>أواخر سبتمبر بداية الخريف الروسي، بين ٩–١٩° مئويًا نهارًا وأبرد ليلًا؛ يُنصح بمعطف متوسط الثقل وطبقات، فالفرق كبير عن أجواء الرياض.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    خطة مبدئية للتنظيم الشخصي — تحقق من مواعيد الحجوزات وكل الأسعار الفعلية قبل السفر، خصوصًا شروط الفيزا الإلكترونية وطرق الدفع المتاحة فعليًا عند السفر.
+  </footer>
+
+</div>
